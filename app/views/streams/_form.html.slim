@@ -1,0 +1,12 @@
+= simple_form_for(@stream) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.association :resource
+    = f.input :amount
+    = f.input :acc_id
+    = f.association :flow
+    = f.input :time
+
+  .form-actions
+    = f.button :submit

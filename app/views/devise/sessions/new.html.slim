@@ -1,0 +1,10 @@
+= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+  - if flash[:alert]
+    .alert.alert-error
+      = flash[:alert]
+  .form-inputs
+    = f.input :nickname, :label => false,:placeholder => 'Логин',:required => true, :autofocus => true
+    = f.input :password, :label => false, :placeholder => "Пароль",:required => true
+    = f.input :remember_me, :label => "Запомнить",:as => :boolean, :wrapper_html => {:style => 'float: left;padding: 5px 50px 5px 0;'} if devise_mapping.rememberable?
+    = f.button :submit, "Войти", :style => 'float: left;'
+= render "devise/shared/links"

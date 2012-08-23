@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Warehouse:
+  = @flow.warehouse
+p
+  strong User:
+  = @flow.user
+p
+  strong Text:
+  = @flow.text
+
+= link_to 'Edit', edit_flow_path(@flow)
+'|
+= link_to 'Back', flows_path

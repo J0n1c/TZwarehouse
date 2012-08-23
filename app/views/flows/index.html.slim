@@ -1,0 +1,23 @@
+h1 Listing flows
+
+table
+  tr
+    th Warehouse
+    th User
+    th Text
+    th
+    th
+    th
+
+  - @flows.each do |flow|
+    tr
+      td = flow.warehouse
+      td = flow.user
+      td = flow.text
+      td = link_to 'Show', flow
+      td = link_to 'Edit', edit_flow_path(flow)
+      td = link_to 'Destroy', flow, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Flow', new_flow_path

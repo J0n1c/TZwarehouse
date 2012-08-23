@@ -1,0 +1,8 @@
+= simple_form_for(@warehouse, :html => { :class => 'form-inline' }) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.association :warehouse_type
+  .form-actions
+    = f.button :submit

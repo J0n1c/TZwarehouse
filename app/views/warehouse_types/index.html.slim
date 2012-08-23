@@ -1,0 +1,13 @@
+h1 Listing warehouse_types
+div#warehouse_types
+  = render @warehouse_types
+
+br
+
+= form_for(WarehouseType.new, :remote => true ) do |f|
+  = f.error_messages
+  .p Новый тип
+  = f.text_field :name, :style => 'margin:5px 15px;'
+  = button_tag :type => :submit, :class =>"btn btn-small icon-plus-sign" do
+    |<i />
+

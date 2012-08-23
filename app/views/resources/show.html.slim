@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @resource.name
+p
+  strong Weight:
+  = @resource.weight
+p
+  strong Ico:
+  = @resource.ico
+
+= link_to 'Edit', edit_resource_path(@resource)
+'|
+= link_to 'Back', resources_path

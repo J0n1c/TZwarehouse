@@ -1,0 +1,5 @@
+=form_for(warehouse_type, :remote => true) do
+  span.list-elem = warehouse_type.name
+  = link_to '', '#', :class =>"btn btn-small icon-pencil"
+  = link_to '', warehouse_type, :method => :delete, :remote => true, :class =>"btn btn-small icon-trash", :disable => true
+/<a class="btn btn-small" href="#"><i class="icon-star"></i></a>

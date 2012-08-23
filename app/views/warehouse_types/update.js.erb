@@ -1,0 +1,8 @@
+<% if @warehouse_type.errors.blank? %>
+    elem = $("#edit_<%=dom_id(@warehouse_type)%> input.list-elem");
+    elem.value = "dsdf" + '<%= @warehouse_type.name %>';
+    elem.attr("data-submited","true");
+    elem.blur();
+<% else %>
+    $("#edit_<%=dom_id(@warehouse_type)%> input.list-elem").effect('highlight', {color: "red"}, 1000);
+<% end %>

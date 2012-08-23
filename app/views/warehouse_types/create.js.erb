@@ -1,0 +1,6 @@
+<% if @warehouse_type.new_record? %>
+    $('input#warehouse_type_name').effect('highlight', { color: 'red' });
+<% else %>
+    $('div#warehouse_types').append("<%= escape_javascript(render @warehouse_type) %>");
+    $("#edit_<%=dom_id(@warehouse_type)%>").children(".list-elem").effect('highlight', {color: "skyblue"}, 1000);
+<% end %>

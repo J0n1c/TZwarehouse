@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Resource:
+  = @stream.resource
+p
+  strong Amount:
+  = @stream.amount
+p
+  strong Acc:
+  = @stream.acc_id
+p
+  strong Flow:
+  = @stream.flow
+p
+  strong Time:
+  = @stream.time
+
+= link_to 'Edit', edit_stream_path(@stream)
+'|
+= link_to 'Back', streams_path

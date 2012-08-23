@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  resource: 
+  amount: 1
+  acc_id: MyString
+  flow: 
+  time: MyString
+
+two:
+  resource: 
+  amount: 1
+  acc_id: MyString
+  flow: 
+  time: MyString
