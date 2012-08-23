@@ -32,7 +32,9 @@
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/warehouse_types.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="18" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <marker date="1345758674000" expanded="true" signature="631:885" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -860,7 +862,9 @@
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/warehouse_types.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="18" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1345758674000" expanded="true" signature="631:885" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
