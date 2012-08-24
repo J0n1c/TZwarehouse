@@ -9,9 +9,9 @@ gem 'rails', '3.2.8'
 #gem 'journey', :git => 'git://github.com/rails/journey.git'
 
 group :development do
-  #gem 'sqlite3'
-  #gem 'thin'
-  #gem 'mailcatcher'
+  gem 'sqlite3'
+  gem 'thin'
+  gem 'mailcatcher'
 end
 
 group :production do

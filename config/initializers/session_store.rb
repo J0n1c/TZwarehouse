@@ -1,6 +1,11 @@
 # Be sure to restart your server when you modify this file.
 
-TzWarehouse::Application.config.session_store :cookie_store, key: '_tz_warehouse_session'
+#TzWarehouse::Application.config.session_store :cookie_store,
+Rails.configuration.session_store :cookie_store, {
+    :key => '_tz_warehouse_session',
+    :domain => ".timezero.ru"
+}
+
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information

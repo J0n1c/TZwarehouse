@@ -53,7 +53,7 @@ TzWarehouse::Application.routes.draw do
 
   # Sample resource route within a namespace:
   #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
+  #     # Directs /admin/products/* to Admin::ProductsControll,s yer
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
@@ -61,7 +61,7 @@ TzWarehouse::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
-  #root :to => "home#index"
+  root :to => "warehouse_types#index"
 
 
   # See how all your routes lay out with "rake routes"

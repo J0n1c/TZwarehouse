@@ -2,8 +2,8 @@ class User < ActiveRecord::Base
   has_many :flows
   # Include default devise modules. Others available are:
   # :token_authenticatable,, :confirmable :registerable, :validatable,
-  # :timeoutable and :omniauthable  ,:recoverable,
-  devise :database_authenticatable, :registerable,
+  # :timeoutable and :omniauthable
+  devise :database_authenticatable,:recoverable,
          :rememberable, :trackable,
          :lockable
 

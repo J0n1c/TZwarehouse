@@ -7,4 +7,5 @@
     = f.input :password, :label => false, :placeholder => "Пароль",:required => true
     = f.input :remember_me, :label => "Запомнить",:as => :boolean, :wrapper_html => {:style => 'float: left;padding: 5px 50px 5px 0;'} if devise_mapping.rememberable?
     = f.button :submit, "Войти", :style => 'float: left;'
+.clearfix
 = render "devise/shared/links"
