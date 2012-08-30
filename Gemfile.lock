@@ -175,6 +175,5 @@ DEPENDENCIES
   slim-rails
   sqlite3
   therubyracer
-  thin
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
