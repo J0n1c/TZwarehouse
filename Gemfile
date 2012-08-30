@@ -8,9 +8,9 @@ gem 'rails', '3.2.8'
 #gem 'activerecord-deprecated_finders', :git => 'git://github.com/rails/activerecord-deprecated_finders.git'
 #gem 'journey', :git => 'git://github.com/rails/journey.git'
 
+gem 'thin'
 group :development do
   gem 'sqlite3'
-  #gem 'thin'
   gem 'mailcatcher'
 end
 
