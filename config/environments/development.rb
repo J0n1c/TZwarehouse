@@ -40,9 +40,4 @@ TzWarehouse::Application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
 
-  #ActionController::Base.session_options[:session_domain] = '.timezero.ru'
-
-
-
-
 end
