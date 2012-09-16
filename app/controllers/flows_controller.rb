@@ -41,6 +41,7 @@ class FlowsController < ApplicationController
   # POST /flows.json
   def create
     @flow = Flow.new(params[:flow])
+    @flow[:user_id] = current_user.id
 
     respond_to do |format|
       if @flow.save

@@ -2,9 +2,8 @@
   = f.error_notification
 
   .form-inputs
-    = f.association :warehouse
-    = f.association :user,   :label_method => :nickname, :include_blank => false
-    = f.input :text, :as => :text
+    = f.association :warehouse, :include_blank => false, :label => 'Недвига'
+    = f.input :text, :as => :text, :label => 'Логи'
 
   .form-actions
-    = f.button :submit
+    = f.button :submit, :value => 'Обработать'
